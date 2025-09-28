@@ -1,0 +1,22 @@
+module(
+  name = 'braft',
+  version = '1.1.2',
+  compatibility_level = 1,
+)
+
+# --registry=https://bcr.bazel.build
+bazel_dep(name = 'brpc', version = '1.14.0', repo_name = 'com_github_brpc_brpc')
+bazel_dep(name = 'abseil-cpp', version = '20210324.2', repo_name = 'com_google_absl')
+bazel_dep(name = 'bazel_skylib', version = '1.0.3')
+
+bazel_dep(name = 'protobuf', version = '3.19.6', repo_name = 'com_google_protobuf')
+bazel_dep(name = 'gflags', version = '2.2.2', repo_name = 'com_github_gflags_gflags')
+bazel_dep(name = 'glog', version = '0.5.0', repo_name = 'com_github_google_glog')
+bazel_dep(name = 'platforms', version = '0.0.4')
+bazel_dep(name = 'rules_cc', version = '0.0.1')
+bazel_dep(name = 'rules_proto', version = '4.0.0')
+bazel_dep(name = 'zlib', version = '1.2.13', repo_name = 'com_github_madler_zlib')
+bazel_dep(name = 'leveldb', version = '1.23', repo_name = 'com_github_google_leveldb')
+bazel_dep(name = 'googletest', version = '1.14.0.bcr.1', repo_name = 'com_google_googletest')
+bazel_dep(name = 'rules_foreign_cc', version = '0.15.0')
+
